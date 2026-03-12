@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CampusCreatix</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Lato:wght@400;700&family=Merriweather:wght@400;700&family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600;700&family=Oswald:wght@400;600;700&family=Playfair+Display:wght@400;600;700&family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.1/fabric.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              main: 'var(--bg-main)',
+              secondary: 'var(--bg-secondary)',
+              card: 'var(--bg-card)',
+              primary: 'var(--accent-primary)',
+              'primary-light': 'var(--accent-secondary)',
+              heading: 'var(--text-heading)',
+              body: 'var(--text-body)',
+              muted: 'var(--text-muted)',
+              border: 'var(--border-default)',
+              input: 'var(--input-bg)',
+              danger: 'var(--danger)',
+              'editor-sel': 'var(--editor-selection)',
+            },
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      :root {
+        --bg-main: #F7F8FA;
+        --bg-secondary: #FBFBFD;
+        --bg-card: #FFFFFF;
+        --accent-primary: #5B5FEF;
+        --accent-secondary: #D8D9F7;
+        --text-heading: #1F2937;
+        --text-body: #374151;
+        --text-muted: #6B7280;
+        --border-default: #E5E7EB;
+        --input-bg: #F1F3F7;
+        --disabled: #D1D5DB;
+        --editor-selection: #7A7DEB;
+        --editor-slider-bg: #E3E7F3;
+        --danger: #DC2626;
+      }
+      body {
+        background-color: var(--bg-main);
+        color: var(--text-body);
+        font-family: 'Inter', sans-serif;
+      }
+      .card-snist {
+        background-color: var(--bg-card);
+        border-left: 4px solid var(--accent-primary);
+        box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@18.2.0",
+    "react/": "https://esm.sh/react@18.2.0/",
+    "react/jsx-runtime": "https://esm.sh/react@18.2.0/jsx-runtime",
+    "react-dom": "https://esm.sh/react-dom@18.2.0",
+    "react-dom/client": "https://esm.sh/react-dom@18.2.0/client",
+    "firebase/app": "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js",
+    "firebase/auth": "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js",
+    "firebase/firestore": "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js",
+    "firebase/storage": "https://www.gstatic.com/firebasejs/10.8.0/firebase-storage.js",
+    "react-router-dom": "https://esm.sh/react-router-dom@6.22.1?deps=react@18.2.0,react-dom@18.2.0",
+    "lucide-react": "https://esm.sh/lucide-react@0.344.0?deps=react@18.2.0",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "firebase/": "https://esm.sh/firebase@^12.7.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>

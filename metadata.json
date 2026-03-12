@@ -1,0 +1,8 @@
+{
+  "name": "Copy of CampusCreatix(upto mock)",
+  "description": "A role-based creative dashboard for SNIST students and faculty.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
